@@ -1,0 +1,20 @@
+{
+  "name": "banco-server",
+  "version": "1.0.0",
+  "description": "API REST - Sistema de Gestión de Cuenta Bancaria Simplificada (Express + MongoDB)",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "node --watch --env-file-if-exists=.env src/index.js",
+    "start": "node --env-file-if-exists=.env src/index.js",
+    "seed": "node --env-file-if-exists=.env src/seed.js"
+  },
+  "engines": {
+    "node": ">=20.6"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "mongoose": "^8.9.0"
+  }
+}
